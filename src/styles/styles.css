@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #FF82FF, #82FFF6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  text-align: center;
+  color: black;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.questions {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Specific Styles for Each Plan */
+.bg-free {
+  background-color: #e8f5e9;
+}
+
+.bg-bronze {
+  background-color: #ffebc1;
+}
+
+.bg-silver {
+  background-color: #cfe7ff;
+}
+
+.bg-gold {
+  background-color: #fff5b8;
+}
+
+.text-free {
+  color: #4caf50;
+}
+
+.text-bronze {
+  color: #ff9800;
+}
+
+.text-silver {
+  color: #03a9f4;
+}
+
+.text-gold {
+  color: #ffb300;
+}
+
+/* Button Colors */
+.free-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.bronze-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.silver-btn {
+  background-color: #03a9f4;
+  color: white;
+}
+
+.gold-btn {
+  background-color: #ffb300;
+  color: white;
+}
+
+
+.notification {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.notification p {
+  color: white;
+  font-size: 1.1rem;
+}
